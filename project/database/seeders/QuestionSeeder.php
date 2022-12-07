@@ -16,13 +16,16 @@ class QuestionSeeder extends Seeder
     {
         $data = [
             [
-                'img_link' => 'img/takanawa.png'
+                'img_link' => 'img/takanawa.png',
+                'answer' => 'たかなわ'
             ],
             [
-                'img_link' => 'img/kameido.png'
+                'img_link' => 'img/kameido.png',
+                'answer' => 'かめいど'
             ],
             [
-                'img_link' => 'img/koujimati.png'
+                'img_link' => 'img/koujimati.png',
+                'answer' => 'こうじまち'
             ]
         ];
         Question::insert($data);
