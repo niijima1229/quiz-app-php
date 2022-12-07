@@ -9,7 +9,15 @@
 </head>
 
 <body>
-    <p>aa</p>
+    @foreach ($questions as $question)
+        <h2>{{ $loop->iteration }}. この地名はなんと読む？</h2>
+        <img src="{{ $question->img_link }}" alt="問題の写真">
+        @foreach ($question->choices as $choice)
+            <div>
+                <span>{{ $choice->name }}</span>
+            </div>
+        @endforeach
+    @endforeach
 </body>
 
 </html>
