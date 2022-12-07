@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Quiz;
+use App\Models\Question;
 
-class QuizSeeder extends Seeder
+class QuestionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -25,6 +25,6 @@ class QuizSeeder extends Seeder
                 'img_link' => 'img/koujimati.png'
             ]
         ];
-        Quiz::insert($data);
+        Question::insert($data);
     }
 }
