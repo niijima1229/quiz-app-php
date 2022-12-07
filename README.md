@@ -1,1 +1,4 @@
-# Laravel8.0Docker
+# 環境構築手順
+
+`cd project-env`
+`make init`

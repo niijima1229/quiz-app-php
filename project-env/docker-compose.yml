@@ -21,10 +21,11 @@ services:
     depends_on:
       - php
 
-  db:
+  mysql:
     platform: linux/amd64
     image: 'mysql:latest'
     environment:
+      MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel
       MYSQL_USER: docker

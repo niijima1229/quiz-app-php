@@ -7,6 +7,9 @@ ENV COMPOSER_HOME /composer
 
 RUN apt update \
 	&& apt-get install -y zlib1g-dev mariadb-client vim libzip-dev \
-	&& docker-php-ext-install zip pdo_mysql 
+	&& docker-php-ext-install zip pdo_mysql &&\
+	curl -sL https://deb.nodesource.com/setup_18.x | bash - && \
+	apt-get install -y nodejs && \
+	npm install npm@latest -g
 
 WORKDIR /var/www
