@@ -16,14 +16,17 @@ class QuestionSeeder extends Seeder
     {
         $data = [
             [
+                'quiz_id' => 1,
                 'img_link' => 'img/takanawa.png',
                 'answer' => 'たかなわ'
             ],
             [
+                'quiz_id' => 1,
                 'img_link' => 'img/kameido.png',
                 'answer' => 'かめいど'
             ],
             [
+                'quiz_id' => 1,
                 'img_link' => 'img/koujimati.png',
                 'answer' => 'こうじまち'
             ]
