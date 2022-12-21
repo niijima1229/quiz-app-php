@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', '\App\Http\Controllers\QuizController@index');
+Route::get('/{id?}', '\App\Http\Controllers\QuizController@index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>東京地名クイズ</title>
+    <title>{{ $quiz->name }}</title>
 </head>
 
 <body>
     <div class="w-full">
         <main class="w-fit mx-auto mt-8">
-            @foreach ($questions as $question)
+            <h1 class="text-4xl font-bold">{{ $quiz->name }}</h1>
+            @foreach ($quiz->questions as $question)
                 <h2 class="text-2xl font-bold mt-8">{{ $loop->iteration }}. この地名はなんと読む？</h2>
                 <div class="text-center">
                     <img src="{{ $question->img_link }}" alt="問題の写真" class="margin-0">

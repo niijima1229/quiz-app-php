@@ -60,6 +60,51 @@ class ChoiceSeeder extends Seeder
                 'name' => 'おかとまち',
                 'is_correct' => false,
             ],
+            [
+                'question_id' => 4,
+                'name' => 'むかいなだ',
+                'is_correct' => true,
+            ],
+            [
+                'question_id' => 4,
+                'name' => 'むこうひら',
+                'is_correct' => false,
+            ],
+            [
+                'question_id' => 4,
+                'name' => 'むきひら',
+                'is_correct' => false,
+            ],
+            [
+                'question_id' => 5,
+                'name' => 'みよし',
+                'is_correct' => false,
+            ],
+            [
+                'question_id' => 5,
+                'name' => 'おしらべ',
+                'is_correct' => false,
+            ],
+            [
+                'question_id' => 5,
+                'name' => 'みつぎ',
+                'is_correct' => true,
+            ],
+            [
+                'question_id' => 6,
+                'name' => 'ぎんざん',
+                'is_correct' => false,
+            ],
+            [
+                'question_id' => 6,
+                'name' => 'かなやま',
+                'is_correct' => true,
+            ],
+            [
+                'question_id' => 6,
+                'name' => 'きやま',
+                'is_correct' => false,
+            ],
         ];
         Choice::insert($data);
     }

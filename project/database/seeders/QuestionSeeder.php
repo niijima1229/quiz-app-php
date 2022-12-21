@@ -29,7 +29,22 @@ class QuestionSeeder extends Seeder
                 'quiz_id' => 1,
                 'img_link' => 'img/koujimati.png',
                 'answer' => 'こうじまち'
-            ]
+            ],
+            [
+                'quiz_id' => 2,
+                'img_link' => 'img/mukainada.png',
+                'answer' => 'むかいなだ'
+            ],
+            [
+                'quiz_id' => 2,
+                'img_link' => 'img/mitugi.png',
+                'answer' => 'みつぎ'
+            ],
+            [
+                'quiz_id' => 2,
+                'img_link' => 'img/kanayama.png',
+                'answer' => 'かなやま'
+            ],
         ];
         Question::insert($data);
     }
